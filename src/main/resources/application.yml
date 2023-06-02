@@ -1,0 +1,48 @@
+spring:
+  application:
+    name: challenge
+app-config:
+  categories:
+  -
+    name: Sports
+    subscribers:
+      - 1
+      - 2
+  -
+    name: Finance
+    subscribers:
+      - 1
+      - 3
+  -
+    name: Films
+    subscribers:
+      - 2
+      - 3
+  users:
+  -
+    id: 1
+    name: User One
+    email: user@test.com
+    phone: 123354325
+    channels:
+      - SMS
+      - Push Notification
+  -
+    id: 2
+    name: Another User
+    email: another@test.com
+    phone: 564546567
+    channels:
+      - SMS
+      - E-Mail
+      - Push Notification
+  -
+    id: 3
+    name: Test User
+    email: test@test.com
+    phone: 3545677
+    channels:
+      - E-Mail
+logging:
+  file:
+    path: challenge.log
